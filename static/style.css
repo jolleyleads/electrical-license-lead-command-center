@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #020617;
+    color: white;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 240px;
+    height: 100vh;
+    background: #020617;
+    border-right: 1px solid #334155;
+    padding: 30px;
+}
+
+.sidebar h2 {
+    color: #facc15;
+}
+
+.sidebar a {
+    display: block;
+    color: #cbd5e1;
+    text-decoration: none;
+    margin: 18px 0;
+}
+
+main {
+    margin-left: 300px;
+    padding: 40px;
+}
+
+.hero {
+    background: linear-gradient(135deg, #1e293b, #111827);
+    border: 1px solid #334155;
+    border-radius: 22px;
+    padding: 34px;
+    margin-bottom: 28px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #facc15;
+    margin-bottom: 8px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-bottom: 28px;
+}
+
+.card, .panel {
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.metric {
+    font-size: 40px;
+    color: #38bdf8;
+    font-weight: bold;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+input, textarea {
+    width: 100%;
+    background: #1e293b;
+    color: white;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 120px;
+    margin-top: 14px;
+}
+
+button {
+    margin-top: 18px;
+    background: #facc15;
+    color: #020617;
+    border: none;
+    padding: 14px 22px;
+    border-radius: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lead-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 22px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 16px;
+    padding: 20px;
+    margin: 16px 0;
+}
+
+.priority-high {
+    border-left: 6px solid #ef4444;
+}
+
+.priority-medium {
+    border-left: 6px solid #f59e0b;
+}
+
+.priority-low {
+    border-left: 6px solid #22c55e;
+}
+
+.score-box {
+    min-width: 90px;
+    text-align: center;
+    background: #020617;
+    border-radius: 14px;
+    padding: 16px;
+    height: fit-content;
+}
+
+.score-box span {
+    display: block;
+    font-size: 34px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.score-box small {
+    color: #cbd5e1;
+}
+
+.activity {
+    background: #1e293b;
+    border-radius: 12px;
+    padding: 14px;
+    margin: 10px 0;
+}
+
+#resultBox {
+    margin-top: 20px;
+    background: #1e293b;
+    border-radius: 14px;
+    padding: 18px;
+}
+
+@media(max-width: 900px) {
+    .sidebar {
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    .grid, .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lead-row {
+        flex-direction: column;
+    }
+}
